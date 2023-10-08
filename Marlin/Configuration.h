@@ -500,9 +500,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  22.2
-    #define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 114
+    #define DEFAULT_Kp 17.65
+    #define DEFAULT_Ki 0.84
+    #define DEFAULT_Kd 93.28
   #endif
 #endif // PIDTEMP
 
@@ -523,7 +523,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -545,9 +545,10 @@
   // #define DEFAULT_bedKi .023
   // #define DEFAULT_bedKd 305.4
   //Geeetech Superplate 12v + insulation
-  #define  DEFAULT_bedKp 340.75
-  #define  DEFAULT_bedKi 67.09
-  #define  DEFAULT_bedKd 432.66
+#define DEFAULT_bedKp 48.57
+#define DEFAULT_bedKi 9.41
+#define DEFAULT_bedKd 167.12
+
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
